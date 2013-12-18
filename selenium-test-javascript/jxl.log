@@ -1,0 +1,225 @@
+2013-12-18 14:04:46,584 [DEBUG] org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager  - Get connection: {}->http://127.0.0.1:7056, timeout = 120000
+2013-12-18 14:04:46,587 [DEBUG] org.apache.http.impl.conn.tsccm.ConnPoolByRoute  - [{}->http://127.0.0.1:7056] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+2013-12-18 14:04:46,587 [DEBUG] org.apache.http.impl.conn.tsccm.ConnPoolByRoute  - No free connections [{}->http://127.0.0.1:7056][null]
+2013-12-18 14:04:46,587 [DEBUG] org.apache.http.impl.conn.tsccm.ConnPoolByRoute  - Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7056][null]
+2013-12-18 14:04:46,587 [DEBUG] org.apache.http.impl.conn.tsccm.ConnPoolByRoute  - Creating new connection [{}->http://127.0.0.1:7056]
+2013-12-18 14:04:46,603 [DEBUG] org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to 127.0.0.1:7056
+2013-12-18 14:04:46,629 [DEBUG] org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: best-match
+2013-12-18 14:04:46,644 [DEBUG] org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+2013-12-18 14:04:46,645 [DEBUG] org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+2013-12-18 14:04:46,645 [DEBUG] org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+2013-12-18 14:04:46,645 [DEBUG] org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+2013-12-18 14:04:46,646 [DEBUG] org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /hub/session HTTP/1.1
+2013-12-18 14:04:46,647 [DEBUG] org.apache.http.wire  - >> "POST /hub/session HTTP/1.1[\r][\n]"
+2013-12-18 14:04:46,648 [DEBUG] org.apache.http.wire  - >> "Accept: application/json, image/png[\r][\n]"
+2013-12-18 14:04:46,648 [DEBUG] org.apache.http.wire  - >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+2013-12-18 14:04:46,648 [DEBUG] org.apache.http.wire  - >> "Content-Length: 105[\r][\n]"
+2013-12-18 14:04:46,648 [DEBUG] org.apache.http.wire  - >> "Host: 127.0.0.1:7056[\r][\n]"
+2013-12-18 14:04:46,649 [DEBUG] org.apache.http.wire  - >> "Connection: Keep-Alive[\r][\n]"
+2013-12-18 14:04:46,649 [DEBUG] org.apache.http.wire  - >> "[\r][\n]"
+2013-12-18 14:04:46,649 [DEBUG] org.apache.http.headers  - >> POST /hub/session HTTP/1.1
+2013-12-18 14:04:46,649 [DEBUG] org.apache.http.headers  - >> Accept: application/json, image/png
+2013-12-18 14:04:46,649 [DEBUG] org.apache.http.headers  - >> Content-Type: application/json; charset=utf-8
+2013-12-18 14:04:46,649 [DEBUG] org.apache.http.headers  - >> Content-Length: 105
+2013-12-18 14:04:46,649 [DEBUG] org.apache.http.headers  - >> Host: 127.0.0.1:7056
+2013-12-18 14:04:46,649 [DEBUG] org.apache.http.headers  - >> Connection: Keep-Alive
+2013-12-18 14:04:46,649 [DEBUG] org.apache.http.wire  - >> "{"desiredCapabilities":{"platform":"ANY","browserName":"firefox","version":""},"requiredCapabilities":{}}"
+2013-12-18 14:04:46,953 [DEBUG] org.apache.http.wire  - << "HTTP/1.1 200 OK[\r][\n]"
+2013-12-18 14:04:46,956 [DEBUG] org.apache.http.wire  - << "content-type: application/json; charset=UTF-8[\r][\n]"
+2013-12-18 14:04:46,956 [DEBUG] org.apache.http.wire  - << "connection: close[\r][\n]"
+2013-12-18 14:04:46,956 [DEBUG] org.apache.http.wire  - << "content-length: 452[\r][\n]"
+2013-12-18 14:04:46,956 [DEBUG] org.apache.http.wire  - << "server: httpd.js[\r][\n]"
+2013-12-18 14:04:46,956 [DEBUG] org.apache.http.wire  - << "date: Wed, 18 Dec 2013 08:34:46 GMT[\r][\n]"
+2013-12-18 14:04:46,956 [DEBUG] org.apache.http.wire  - << "[\r][\n]"
+2013-12-18 14:04:46,957 [DEBUG] org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+2013-12-18 14:04:46,957 [DEBUG] org.apache.http.headers  - << HTTP/1.1 200 OK
+2013-12-18 14:04:46,957 [DEBUG] org.apache.http.headers  - << content-type: application/json; charset=UTF-8
+2013-12-18 14:04:46,957 [DEBUG] org.apache.http.headers  - << connection: close
+2013-12-18 14:04:46,957 [DEBUG] org.apache.http.headers  - << content-length: 452
+2013-12-18 14:04:46,957 [DEBUG] org.apache.http.headers  - << server: httpd.js
+2013-12-18 14:04:46,957 [DEBUG] org.apache.http.headers  - << date: Wed, 18 Dec 2013 08:34:46 GMT
+2013-12-18 14:04:46,963 [DEBUG] org.apache.http.wire  - << "{"name":"newSession","sessionId":"eb2d62f0-45b4-4e92-aaa6-658479a46eb0","status":0,"value":{"cssSelectorsEnabled":true,"browserName":"firefox","handlesAlerts":true,"javascriptEnabled":true,"nativeEvents":true,"platform":"WINNT","rotatable":false,"takesScreenshot":true,"version":"25.0.1","webStorageEnabled":true,"applicationCacheEnabled":true,"databaseEnabled":true,"locationContextEnabled":true,"browserConnectionEnabled":true,"acceptSslCerts":true}}"
+2013-12-18 14:04:46,964 [DEBUG] org.apache.http.impl.conn.DefaultClientConnection  - Connection 0.0.0.0:51710<->127.0.0.1:7056 shut down
+2013-12-18 14:04:46,964 [DEBUG] org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager  - Released connection is not reusable.
+2013-12-18 14:04:46,964 [DEBUG] org.apache.http.impl.conn.tsccm.ConnPoolByRoute  - Releasing connection [{}->http://127.0.0.1:7056][null]
+2013-12-18 14:04:46,964 [DEBUG] org.apache.http.impl.conn.DefaultClientConnection  - Connection 0.0.0.0:51710<->127.0.0.1:7056 closed
+2013-12-18 14:04:46,964 [DEBUG] org.apache.http.impl.conn.tsccm.ConnPoolByRoute  - Notifying no-one, there are no waiting threads
+2013-12-18 14:04:46,981 [DEBUG] org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager  - Get connection: {}->http://127.0.0.1:7056, timeout = 120000
+2013-12-18 14:04:46,981 [DEBUG] org.apache.http.impl.conn.tsccm.ConnPoolByRoute  - [{}->http://127.0.0.1:7056] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+2013-12-18 14:04:46,982 [DEBUG] org.apache.http.impl.conn.tsccm.ConnPoolByRoute  - No free connections [{}->http://127.0.0.1:7056][null]
+2013-12-18 14:04:46,982 [DEBUG] org.apache.http.impl.conn.tsccm.ConnPoolByRoute  - Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7056][null]
+2013-12-18 14:04:46,982 [DEBUG] org.apache.http.impl.conn.tsccm.ConnPoolByRoute  - Creating new connection [{}->http://127.0.0.1:7056]
+2013-12-18 14:04:46,982 [DEBUG] org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to 127.0.0.1:7056
+2013-12-18 14:04:46,983 [DEBUG] org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: best-match
+2013-12-18 14:04:46,983 [DEBUG] org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+2013-12-18 14:04:46,983 [DEBUG] org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+2013-12-18 14:04:46,983 [DEBUG] org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+2013-12-18 14:04:46,983 [DEBUG] org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+2013-12-18 14:04:46,983 [DEBUG] org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /hub/session/eb2d62f0-45b4-4e92-aaa6-658479a46eb0/url HTTP/1.1
+2013-12-18 14:04:46,983 [DEBUG] org.apache.http.wire  - >> "POST /hub/session/eb2d62f0-45b4-4e92-aaa6-658479a46eb0/url HTTP/1.1[\r][\n]"
+2013-12-18 14:04:46,983 [DEBUG] org.apache.http.wire  - >> "Accept: application/json, image/png[\r][\n]"
+2013-12-18 14:04:46,983 [DEBUG] org.apache.http.wire  - >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+2013-12-18 14:04:46,983 [DEBUG] org.apache.http.wire  - >> "Content-Length: 50[\r][\n]"
+2013-12-18 14:04:46,983 [DEBUG] org.apache.http.wire  - >> "Host: 127.0.0.1:7056[\r][\n]"
+2013-12-18 14:04:46,983 [DEBUG] org.apache.http.wire  - >> "Connection: Keep-Alive[\r][\n]"
+2013-12-18 14:04:46,984 [DEBUG] org.apache.http.wire  - >> "[\r][\n]"
+2013-12-18 14:04:46,984 [DEBUG] org.apache.http.headers  - >> POST /hub/session/eb2d62f0-45b4-4e92-aaa6-658479a46eb0/url HTTP/1.1
+2013-12-18 14:04:46,984 [DEBUG] org.apache.http.headers  - >> Accept: application/json, image/png
+2013-12-18 14:04:46,984 [DEBUG] org.apache.http.headers  - >> Content-Type: application/json; charset=utf-8
+2013-12-18 14:04:46,984 [DEBUG] org.apache.http.headers  - >> Content-Length: 50
+2013-12-18 14:04:46,984 [DEBUG] org.apache.http.headers  - >> Host: 127.0.0.1:7056
+2013-12-18 14:04:46,984 [DEBUG] org.apache.http.headers  - >> Connection: Keep-Alive
+2013-12-18 14:04:46,984 [DEBUG] org.apache.http.wire  - >> "{"url":"https://emtrack-ng.qa.intermedix.com/app"}"
+2013-12-18 14:04:51,973 [DEBUG] org.apache.http.wire  - << "HTTP/1.1 200 OK[\r][\n]"
+2013-12-18 14:04:51,973 [DEBUG] org.apache.http.wire  - << "content-type: application/json; charset=UTF-8[\r][\n]"
+2013-12-18 14:04:51,973 [DEBUG] org.apache.http.wire  - << "connection: close[\r][\n]"
+2013-12-18 14:04:51,973 [DEBUG] org.apache.http.wire  - << "content-length: 87[\r][\n]"
+2013-12-18 14:04:51,973 [DEBUG] org.apache.http.wire  - << "server: httpd.js[\r][\n]"
+2013-12-18 14:04:51,973 [DEBUG] org.apache.http.wire  - << "date: Wed, 18 Dec 2013 08:34:51 GMT[\r][\n]"
+2013-12-18 14:04:51,973 [DEBUG] org.apache.http.wire  - << "[\r][\n]"
+2013-12-18 14:04:51,973 [DEBUG] org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+2013-12-18 14:04:51,973 [DEBUG] org.apache.http.headers  - << HTTP/1.1 200 OK
+2013-12-18 14:04:51,973 [DEBUG] org.apache.http.headers  - << content-type: application/json; charset=UTF-8
+2013-12-18 14:04:51,973 [DEBUG] org.apache.http.headers  - << connection: close
+2013-12-18 14:04:51,973 [DEBUG] org.apache.http.headers  - << content-length: 87
+2013-12-18 14:04:51,973 [DEBUG] org.apache.http.headers  - << server: httpd.js
+2013-12-18 14:04:51,973 [DEBUG] org.apache.http.headers  - << date: Wed, 18 Dec 2013 08:34:51 GMT
+2013-12-18 14:04:51,974 [DEBUG] org.apache.http.wire  - << "{"name":"get","sessionId":"eb2d62f0-45b4-4e92-aaa6-658479a46eb0","status":0,"value":""}"
+2013-12-18 14:04:51,974 [DEBUG] org.apache.http.impl.conn.DefaultClientConnection  - Connection 0.0.0.0:51711<->127.0.0.1:7056 shut down
+2013-12-18 14:04:51,974 [DEBUG] org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager  - Released connection is not reusable.
+2013-12-18 14:04:51,974 [DEBUG] org.apache.http.impl.conn.tsccm.ConnPoolByRoute  - Releasing connection [{}->http://127.0.0.1:7056][null]
+2013-12-18 14:04:51,974 [DEBUG] org.apache.http.impl.conn.DefaultClientConnection  - Connection 0.0.0.0:51711<->127.0.0.1:7056 closed
+2013-12-18 14:04:51,974 [DEBUG] org.apache.http.impl.conn.tsccm.ConnPoolByRoute  - Notifying no-one, there are no waiting threads
+2013-12-18 14:04:51,978 [DEBUG] org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager  - Get connection: {}->http://127.0.0.1:7056, timeout = 120000
+2013-12-18 14:04:51,978 [DEBUG] org.apache.http.impl.conn.tsccm.ConnPoolByRoute  - [{}->http://127.0.0.1:7056] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+2013-12-18 14:04:51,978 [DEBUG] org.apache.http.impl.conn.tsccm.ConnPoolByRoute  - No free connections [{}->http://127.0.0.1:7056][null]
+2013-12-18 14:04:51,978 [DEBUG] org.apache.http.impl.conn.tsccm.ConnPoolByRoute  - Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7056][null]
+2013-12-18 14:04:51,978 [DEBUG] org.apache.http.impl.conn.tsccm.ConnPoolByRoute  - Creating new connection [{}->http://127.0.0.1:7056]
+2013-12-18 14:04:51,978 [DEBUG] org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to 127.0.0.1:7056
+2013-12-18 14:04:51,979 [DEBUG] org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: best-match
+2013-12-18 14:04:51,979 [DEBUG] org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+2013-12-18 14:04:51,979 [DEBUG] org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+2013-12-18 14:04:51,979 [DEBUG] org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+2013-12-18 14:04:51,979 [DEBUG] org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+2013-12-18 14:04:51,979 [DEBUG] org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /hub/session/eb2d62f0-45b4-4e92-aaa6-658479a46eb0/execute HTTP/1.1
+2013-12-18 14:04:51,980 [DEBUG] org.apache.http.wire  - >> "POST /hub/session/eb2d62f0-45b4-4e92-aaa6-658479a46eb0/execute HTTP/1.1[\r][\n]"
+2013-12-18 14:04:51,980 [DEBUG] org.apache.http.wire  - >> "Accept: application/json, image/png[\r][\n]"
+2013-12-18 14:04:51,980 [DEBUG] org.apache.http.wire  - >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+2013-12-18 14:04:51,980 [DEBUG] org.apache.http.wire  - >> "Content-Length: 48[\r][\n]"
+2013-12-18 14:04:51,980 [DEBUG] org.apache.http.wire  - >> "Host: 127.0.0.1:7056[\r][\n]"
+2013-12-18 14:04:51,980 [DEBUG] org.apache.http.wire  - >> "Connection: Keep-Alive[\r][\n]"
+2013-12-18 14:04:51,980 [DEBUG] org.apache.http.wire  - >> "[\r][\n]"
+2013-12-18 14:04:51,980 [DEBUG] org.apache.http.headers  - >> POST /hub/session/eb2d62f0-45b4-4e92-aaa6-658479a46eb0/execute HTTP/1.1
+2013-12-18 14:04:51,980 [DEBUG] org.apache.http.headers  - >> Accept: application/json, image/png
+2013-12-18 14:04:51,980 [DEBUG] org.apache.http.headers  - >> Content-Type: application/json; charset=utf-8
+2013-12-18 14:04:51,980 [DEBUG] org.apache.http.headers  - >> Content-Length: 48
+2013-12-18 14:04:51,980 [DEBUG] org.apache.http.headers  - >> Host: 127.0.0.1:7056
+2013-12-18 14:04:51,980 [DEBUG] org.apache.http.headers  - >> Connection: Keep-Alive
+2013-12-18 14:04:51,980 [DEBUG] org.apache.http.wire  - >> "{"args":[],"script":"window.location.reload();"}"
+2013-12-18 14:04:51,989 [DEBUG] org.apache.http.wire  - << "HTTP/1.1 200 OK[\r][\n]"
+2013-12-18 14:04:51,989 [DEBUG] org.apache.http.wire  - << "content-type: application/json; charset=UTF-8[\r][\n]"
+2013-12-18 14:04:51,989 [DEBUG] org.apache.http.wire  - << "connection: close[\r][\n]"
+2013-12-18 14:04:51,989 [DEBUG] org.apache.http.wire  - << "content-length: 99[\r][\n]"
+2013-12-18 14:04:51,989 [DEBUG] org.apache.http.wire  - << "server: httpd.js[\r][\n]"
+2013-12-18 14:04:51,989 [DEBUG] org.apache.http.wire  - << "date: Wed, 18 Dec 2013 08:34:51 GMT[\r][\n]"
+2013-12-18 14:04:51,989 [DEBUG] org.apache.http.wire  - << "[\r][\n]"
+2013-12-18 14:04:51,989 [DEBUG] org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+2013-12-18 14:04:51,989 [DEBUG] org.apache.http.headers  - << HTTP/1.1 200 OK
+2013-12-18 14:04:51,989 [DEBUG] org.apache.http.headers  - << content-type: application/json; charset=UTF-8
+2013-12-18 14:04:51,989 [DEBUG] org.apache.http.headers  - << connection: close
+2013-12-18 14:04:51,989 [DEBUG] org.apache.http.headers  - << content-length: 99
+2013-12-18 14:04:51,989 [DEBUG] org.apache.http.headers  - << server: httpd.js
+2013-12-18 14:04:51,989 [DEBUG] org.apache.http.headers  - << date: Wed, 18 Dec 2013 08:34:51 GMT
+2013-12-18 14:04:51,990 [DEBUG] org.apache.http.wire  - << "{"name":"executeScript","sessionId":"eb2d62f0-45b4-4e92-aaa6-658479a46eb0","status":0,"value":null}"
+2013-12-18 14:04:51,990 [DEBUG] org.apache.http.impl.conn.DefaultClientConnection  - Connection 0.0.0.0:51718<->127.0.0.1:7056 shut down
+2013-12-18 14:04:51,990 [DEBUG] org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager  - Released connection is not reusable.
+2013-12-18 14:04:51,990 [DEBUG] org.apache.http.impl.conn.tsccm.ConnPoolByRoute  - Releasing connection [{}->http://127.0.0.1:7056][null]
+2013-12-18 14:04:51,990 [DEBUG] org.apache.http.impl.conn.DefaultClientConnection  - Connection 0.0.0.0:51718<->127.0.0.1:7056 closed
+2013-12-18 14:04:51,990 [DEBUG] org.apache.http.impl.conn.tsccm.ConnPoolByRoute  - Notifying no-one, there are no waiting threads
+2013-12-18 14:04:51,990 [DEBUG] org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager  - Get connection: {}->http://127.0.0.1:7056, timeout = 120000
+2013-12-18 14:04:51,991 [DEBUG] org.apache.http.impl.conn.tsccm.ConnPoolByRoute  - [{}->http://127.0.0.1:7056] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+2013-12-18 14:04:51,991 [DEBUG] org.apache.http.impl.conn.tsccm.ConnPoolByRoute  - No free connections [{}->http://127.0.0.1:7056][null]
+2013-12-18 14:04:51,991 [DEBUG] org.apache.http.impl.conn.tsccm.ConnPoolByRoute  - Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7056][null]
+2013-12-18 14:04:51,991 [DEBUG] org.apache.http.impl.conn.tsccm.ConnPoolByRoute  - Creating new connection [{}->http://127.0.0.1:7056]
+2013-12-18 14:04:51,991 [DEBUG] org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to 127.0.0.1:7056
+2013-12-18 14:04:51,992 [DEBUG] org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: best-match
+2013-12-18 14:04:51,992 [DEBUG] org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+2013-12-18 14:04:51,992 [DEBUG] org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+2013-12-18 14:04:51,992 [DEBUG] org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+2013-12-18 14:04:51,992 [DEBUG] org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+2013-12-18 14:04:51,992 [DEBUG] org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /hub/session/eb2d62f0-45b4-4e92-aaa6-658479a46eb0/execute HTTP/1.1
+2013-12-18 14:04:51,992 [DEBUG] org.apache.http.wire  - >> "POST /hub/session/eb2d62f0-45b4-4e92-aaa6-658479a46eb0/execute HTTP/1.1[\r][\n]"
+2013-12-18 14:04:51,992 [DEBUG] org.apache.http.wire  - >> "Accept: application/json, image/png[\r][\n]"
+2013-12-18 14:04:51,992 [DEBUG] org.apache.http.wire  - >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+2013-12-18 14:04:51,992 [DEBUG] org.apache.http.wire  - >> "Content-Length: 198[\r][\n]"
+2013-12-18 14:04:51,992 [DEBUG] org.apache.http.wire  - >> "Host: 127.0.0.1:7056[\r][\n]"
+2013-12-18 14:04:51,992 [DEBUG] org.apache.http.wire  - >> "Connection: Keep-Alive[\r][\n]"
+2013-12-18 14:04:51,992 [DEBUG] org.apache.http.wire  - >> "[\r][\n]"
+2013-12-18 14:04:51,992 [DEBUG] org.apache.http.headers  - >> POST /hub/session/eb2d62f0-45b4-4e92-aaa6-658479a46eb0/execute HTTP/1.1
+2013-12-18 14:04:51,992 [DEBUG] org.apache.http.headers  - >> Accept: application/json, image/png
+2013-12-18 14:04:51,992 [DEBUG] org.apache.http.headers  - >> Content-Type: application/json; charset=utf-8
+2013-12-18 14:04:51,992 [DEBUG] org.apache.http.headers  - >> Content-Length: 198
+2013-12-18 14:04:51,992 [DEBUG] org.apache.http.headers  - >> Host: 127.0.0.1:7056
+2013-12-18 14:04:51,992 [DEBUG] org.apache.http.headers  - >> Connection: Keep-Alive
+2013-12-18 14:04:51,993 [DEBUG] org.apache.http.wire  - >> "{"args":[],"script":"window.document.getElementById('name').value = 'autoregadmin4';window.document.getElementById('password').value = 'abc123';window.document.getElementById('loginBttn').click();"}"
+2013-12-18 14:04:52,981 [DEBUG] org.apache.http.wire  - << "HTTP/1.1 200 OK[\r][\n]"
+2013-12-18 14:04:52,982 [DEBUG] org.apache.http.wire  - << "content-type: application/json; charset=UTF-8[\r][\n]"
+2013-12-18 14:04:52,982 [DEBUG] org.apache.http.wire  - << "connection: close[\r][\n]"
+2013-12-18 14:04:52,982 [DEBUG] org.apache.http.wire  - << "content-length: 99[\r][\n]"
+2013-12-18 14:04:52,982 [DEBUG] org.apache.http.wire  - << "server: httpd.js[\r][\n]"
+2013-12-18 14:04:52,982 [DEBUG] org.apache.http.wire  - << "date: Wed, 18 Dec 2013 08:34:52 GMT[\r][\n]"
+2013-12-18 14:04:52,982 [DEBUG] org.apache.http.wire  - << "[\r][\n]"
+2013-12-18 14:04:52,982 [DEBUG] org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+2013-12-18 14:04:52,982 [DEBUG] org.apache.http.headers  - << HTTP/1.1 200 OK
+2013-12-18 14:04:52,983 [DEBUG] org.apache.http.headers  - << content-type: application/json; charset=UTF-8
+2013-12-18 14:04:52,983 [DEBUG] org.apache.http.headers  - << connection: close
+2013-12-18 14:04:52,983 [DEBUG] org.apache.http.headers  - << content-length: 99
+2013-12-18 14:04:52,983 [DEBUG] org.apache.http.headers  - << server: httpd.js
+2013-12-18 14:04:52,983 [DEBUG] org.apache.http.headers  - << date: Wed, 18 Dec 2013 08:34:52 GMT
+2013-12-18 14:04:52,989 [DEBUG] org.apache.http.wire  - << "{"name":"executeScript","sessionId":"eb2d62f0-45b4-4e92-aaa6-658479a46eb0","status":0,"value":null}"
+2013-12-18 14:04:52,989 [DEBUG] org.apache.http.impl.conn.DefaultClientConnection  - Connection 0.0.0.0:51719<->127.0.0.1:7056 shut down
+2013-12-18 14:04:52,989 [DEBUG] org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager  - Released connection is not reusable.
+2013-12-18 14:04:52,989 [DEBUG] org.apache.http.impl.conn.tsccm.ConnPoolByRoute  - Releasing connection [{}->http://127.0.0.1:7056][null]
+2013-12-18 14:04:52,989 [DEBUG] org.apache.http.impl.conn.DefaultClientConnection  - Connection 0.0.0.0:51719<->127.0.0.1:7056 closed
+2013-12-18 14:04:52,989 [DEBUG] org.apache.http.impl.conn.tsccm.ConnPoolByRoute  - Notifying no-one, there are no waiting threads
+2013-12-18 14:04:52,990 [DEBUG] org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager  - Get connection: {}->http://127.0.0.1:7056, timeout = 120000
+2013-12-18 14:04:52,990 [DEBUG] org.apache.http.impl.conn.tsccm.ConnPoolByRoute  - [{}->http://127.0.0.1:7056] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+2013-12-18 14:04:52,990 [DEBUG] org.apache.http.impl.conn.tsccm.ConnPoolByRoute  - No free connections [{}->http://127.0.0.1:7056][null]
+2013-12-18 14:04:52,990 [DEBUG] org.apache.http.impl.conn.tsccm.ConnPoolByRoute  - Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7056][null]
+2013-12-18 14:04:52,990 [DEBUG] org.apache.http.impl.conn.tsccm.ConnPoolByRoute  - Creating new connection [{}->http://127.0.0.1:7056]
+2013-12-18 14:04:52,991 [DEBUG] org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to 127.0.0.1:7056
+2013-12-18 14:04:52,992 [DEBUG] org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: best-match
+2013-12-18 14:04:52,993 [DEBUG] org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+2013-12-18 14:04:52,993 [DEBUG] org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+2013-12-18 14:04:52,993 [DEBUG] org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+2013-12-18 14:04:52,993 [DEBUG] org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+2013-12-18 14:04:52,993 [DEBUG] org.apache.http.impl.conn.DefaultClientConnection  - Sending request: DELETE /hub/session/eb2d62f0-45b4-4e92-aaa6-658479a46eb0 HTTP/1.1
+2013-12-18 14:04:52,993 [DEBUG] org.apache.http.wire  - >> "DELETE /hub/session/eb2d62f0-45b4-4e92-aaa6-658479a46eb0 HTTP/1.1[\r][\n]"
+2013-12-18 14:04:52,993 [DEBUG] org.apache.http.wire  - >> "Accept: application/json, image/png[\r][\n]"
+2013-12-18 14:04:52,993 [DEBUG] org.apache.http.wire  - >> "Host: 127.0.0.1:7056[\r][\n]"
+2013-12-18 14:04:52,993 [DEBUG] org.apache.http.wire  - >> "Connection: Keep-Alive[\r][\n]"
+2013-12-18 14:04:52,993 [DEBUG] org.apache.http.wire  - >> "[\r][\n]"
+2013-12-18 14:04:52,993 [DEBUG] org.apache.http.headers  - >> DELETE /hub/session/eb2d62f0-45b4-4e92-aaa6-658479a46eb0 HTTP/1.1
+2013-12-18 14:04:52,993 [DEBUG] org.apache.http.headers  - >> Accept: application/json, image/png
+2013-12-18 14:04:52,993 [DEBUG] org.apache.http.headers  - >> Host: 127.0.0.1:7056
+2013-12-18 14:04:52,993 [DEBUG] org.apache.http.headers  - >> Connection: Keep-Alive
+2013-12-18 14:04:52,996 [DEBUG] org.apache.http.wire  - << "HTTP/1.1 200 OK[\r][\n]"
+2013-12-18 14:04:52,996 [DEBUG] org.apache.http.wire  - << "content-type: application/json; charset=UTF-8[\r][\n]"
+2013-12-18 14:04:52,996 [DEBUG] org.apache.http.wire  - << "connection: close[\r][\n]"
+2013-12-18 14:04:52,996 [DEBUG] org.apache.http.wire  - << "content-length: 88[\r][\n]"
+2013-12-18 14:04:52,996 [DEBUG] org.apache.http.wire  - << "server: httpd.js[\r][\n]"
+2013-12-18 14:04:52,996 [DEBUG] org.apache.http.wire  - << "date: Wed, 18 Dec 2013 08:34:52 GMT[\r][\n]"
+2013-12-18 14:04:52,996 [DEBUG] org.apache.http.wire  - << "[\r][\n]"
+2013-12-18 14:04:52,996 [DEBUG] org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+2013-12-18 14:04:52,996 [DEBUG] org.apache.http.headers  - << HTTP/1.1 200 OK
+2013-12-18 14:04:52,996 [DEBUG] org.apache.http.headers  - << content-type: application/json; charset=UTF-8
+2013-12-18 14:04:52,996 [DEBUG] org.apache.http.headers  - << connection: close
+2013-12-18 14:04:52,996 [DEBUG] org.apache.http.headers  - << content-length: 88
+2013-12-18 14:04:52,996 [DEBUG] org.apache.http.headers  - << server: httpd.js
+2013-12-18 14:04:52,996 [DEBUG] org.apache.http.headers  - << date: Wed, 18 Dec 2013 08:34:52 GMT
+2013-12-18 14:04:52,997 [DEBUG] org.apache.http.wire  - << "{"name":"quit","sessionId":"eb2d62f0-45b4-4e92-aaa6-658479a46eb0","status":0,"value":""}"
+2013-12-18 14:04:52,997 [DEBUG] org.apache.http.impl.conn.DefaultClientConnection  - Connection 0.0.0.0:51720<->127.0.0.1:7056 shut down
+2013-12-18 14:04:52,997 [DEBUG] org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager  - Released connection is not reusable.
+2013-12-18 14:04:52,997 [DEBUG] org.apache.http.impl.conn.tsccm.ConnPoolByRoute  - Releasing connection [{}->http://127.0.0.1:7056][null]
+2013-12-18 14:04:52,997 [DEBUG] org.apache.http.impl.conn.DefaultClientConnection  - Connection 0.0.0.0:51720<->127.0.0.1:7056 closed
+2013-12-18 14:04:52,997 [DEBUG] org.apache.http.impl.conn.tsccm.ConnPoolByRoute  - Notifying no-one, there are no waiting threads
